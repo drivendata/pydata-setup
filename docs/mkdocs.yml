@@ -1,0 +1,8 @@
+site_name: Installing Python for Data Science
+site_description: Instructions for installing Python via Anaconda and creating a new environment with the latest packages.
+site_favicon: favicon.ico
+repo_url: https://github.com/drivendata/pydata-setup
+copyright: Project maintained by the friendly folks at <a target=_blanks href="https://www.drivendata.org">DrivenData</a>.
+theme: cinder
+pages:
+  - Home: index.md
