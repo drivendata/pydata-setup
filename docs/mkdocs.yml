@@ -3,6 +3,7 @@ site_description: Instructions for installing Python via Anaconda and creating a
 site_favicon: favicon.ico
 repo_url: https://github.com/drivendata/pydata-setup
 copyright: Project maintained by the friendly folks at <a target=_blanks href="https://www.drivendata.org">DrivenData</a>.
+google_analytics: ['UA-54096005-6', 'auto']
 theme: cinder
 pages:
   - Home: index.md
