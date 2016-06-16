@@ -1,6 +1,8 @@
-# Setting up your machine for data science in Python [~20 - 30 minutes]
+# Setting up your machine for data science in Python
 
 > So you're into snakecharming and crystal balls? Consider this the magic supply shop...
+
+**Time required**: *[~20 - 30 minutes]*
 
 This is a community-maintained set of instructions for installing the Python Data Science stack. If you'll be using the programming language Python and its related libraries for loading data, exploring what it contains, visualizing that data, and creating statistical models this is what you need. Here's how to get your machine setup properly.
 
