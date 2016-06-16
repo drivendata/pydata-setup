@@ -1,8 +1,8 @@
-# An Intro to Snakecharming + Crystal Balls: Data science in Python
+# Setting up your machine for data science in Python [~20 - 30 minutes]
 
-## Setting up your machine for data science [~10- 15 minutes]
+> So you're into snakecharming and crystal balls? Consider this the magic supply shop...
 
-In this tutorial we'll be using the programming language Python and its related libraries for loading data, exploring what it contains, visualizing that data, and creating statistical models. Here's what you'll need to get your machine setup properly.
+This is a community-maintained set of instructions for installing the Python Data Science stack. If you'll be using the programming language Python and its related libraries for loading data, exploring what it contains, visualizing that data, and creating statistical models this is what you need. Here's how to get your machine setup properly.
 
 ## 1. Install Anaconda
 
@@ -16,8 +16,8 @@ Anaconda puts nearly all of the tools that we're going to need into a neat littl
 
 ## 2. Download and install the packages that we will use
  * Download this environment file: Remember where you save the file `environment.yml`. You'll need that path shortly. You don't need to open that file right now.
-     * [**Windows**](https://s3.amazonaws.com/drivendata.org/assets/environment.windows.yml)
-     * [**OSX**](https://s3.amazonaws.com/drivendata.org/assets/environment.osx.yml)
+     * [**Windows**](https://github.com/drivendata/pydata-setup/raw/master/environment.windows.yml)
+     * [**OSX**](https://github.com/drivendata/pydata-setup/raw/master/environment.osx.yml)
  * Open the commmand line.
      * **Windows** - Hit "Start" and then type "Command Prompt" and use that terminal.
      * **OSX** - Type `Cmd+Space` and then enter `Terminal` in the search box to open the terminal.
