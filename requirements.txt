@@ -1,2 +1,2 @@
-git+git://github.com/pjbull/mkdocs@master#egg=mkdocs
+git+git://github.com/pjbull/mkdocs@force-push#egg=mkdocs
 mkdocs-cinder
