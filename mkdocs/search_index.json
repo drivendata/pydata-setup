@@ -1,0 +1,39 @@
+{
+    "docs": [
+        {
+            "location": "/",
+            "text": "Setting up your machine for data science in Python\n\n\n\n\nSo you're into snakecharming and crystal balls? Consider this the magic supply shop...\n\n\n\n\nTime required\n: \n[~20 - 30 minutes]\n\n\nThis is a community-maintained set of instructions for installing the Python Data Science stack. If you'll be using the programming language Python and its related libraries for loading data, exploring what it contains, visualizing that data, and creating statistical models this is what you need. Here's how to get your machine setup properly.\n\n\n1. Install Anaconda\n\n\nAnaconda puts nearly all of the tools that we're going to need into a neat little package: the Python core language, an improved REPL environment called \nJupyter\n, numeric computing libraries (\nNumPy\n, \npandas\n), plotting libraries (\nseaborn\n, \nmatplotlib\n), and statistics and machine learning libraries (\nSciPy\n, \nscikit-learn\n, \nstatsmodels\n). We'll use Anaconda's installer to handle setting up the environment that we'll work in.\n\n\n\n\nAnaconda installer packages:\n\n\nWindows\n\n\nMac OSX\n\n\n\n\n\n\nOnce this downloads, you can follow the instructions for installing on your operating system: \nat this link\n.\n\n\nNote:\n It's easiest just to use Anaconda's defaults in the installer. You don't have to change anything unless you're \nsure\n you want something different.\n\n\n\n\n2. Download and install the packages that we will use\n\n\n\n\nDownload this environment file: Remember where you save the file \nenvironment.yml\n. You'll need that path shortly. You don't need to open that file right now.\n\n\nWindows\n\n\nOSX\n\n\n\n\n\n\n\n\nOpen the commmand line.\n\n\n\n\nWindows\n - Hit \"Start\" and then type \"Command Prompt\" and use that terminal.\n\n\nOSX\n - Type \nCmd+Space\n and then enter \nTerminal\n in the search box to open the terminal.\n\n\n\n\n\n\n\n\nRun the following commands, which will install the package and put you in the tutorial environment.\n\n\n\n\nconda env create -f <PATH_TO_ENVIRONMENT.YML>\n - You'll need to replace \n<PATH_TO_ENVIRONMENT.YML>\n with the actual path where the file was downloaded. For OSX, that's often (\n/Users/<USERNAME>/Downloads/environment.yml\n). For Windows, it is usually \nC:/Users/<USERNAME>/Downloads/environment.yml\n. You'll have to replace \n<USERNAME>\n with your username on your machine.\n\n\n\n\n\n\n\n\n\n\n\n\nThat will download all of the packages that we'll be using. When it finishes, you can activate the environment with the following command:\n\n\nWindows\n - \nactivate tutorial\n\n\nOSX\n - \nsource activate tutorial\n\n\n\n\n\n\n\n\n\n\n\n3. Run Jupyter notebook!\n\n\n\n\nIn your command prompt \nwith the tutorial environment activated\n\n\nType the following command \njupyter notebook .\n\n\nA browser window will open, showing the Jupyer environment. By default, you will be in a file browser view.\n\n\nIn the file browser, find where you downloaded the course materials (if you have them yet).\n\n\nClick on one of the notebook (*.ipynb) files to get started!\n\n\n\n\n\n\n\n4. To stop Jupyter notebook:\n\n\n\n\nHit \nCtrl+c\n to stop the Jupyter notebook server running on your machine. (Make sure to use \nCtrl+s\n in the notebook to save it first!)\n\n\n\n\n5. To leave the tutorial environment (with all our fun packages) and go back to your normal environment:\n\n\n\n\nWindows\n - \ndeactivate tutorial\n\n\nOSX\n - \nsource deactivate tutorial",
+            "title": "Home"
+        },
+        {
+            "location": "/#setting-up-your-machine-for-data-science-in-python",
+            "text": "So you're into snakecharming and crystal balls? Consider this the magic supply shop...   Time required :  [~20 - 30 minutes]  This is a community-maintained set of instructions for installing the Python Data Science stack. If you'll be using the programming language Python and its related libraries for loading data, exploring what it contains, visualizing that data, and creating statistical models this is what you need. Here's how to get your machine setup properly.",
+            "title": "Setting up your machine for data science in Python"
+        },
+        {
+            "location": "/#1-install-anaconda",
+            "text": "Anaconda puts nearly all of the tools that we're going to need into a neat little package: the Python core language, an improved REPL environment called  Jupyter , numeric computing libraries ( NumPy ,  pandas ), plotting libraries ( seaborn ,  matplotlib ), and statistics and machine learning libraries ( SciPy ,  scikit-learn ,  statsmodels ). We'll use Anaconda's installer to handle setting up the environment that we'll work in.   Anaconda installer packages:  Windows  Mac OSX    Once this downloads, you can follow the instructions for installing on your operating system:  at this link .  Note:  It's easiest just to use Anaconda's defaults in the installer. You don't have to change anything unless you're  sure  you want something different.",
+            "title": "1. Install Anaconda"
+        },
+        {
+            "location": "/#2-download-and-install-the-packages-that-we-will-use",
+            "text": "Download this environment file: Remember where you save the file  environment.yml . You'll need that path shortly. You don't need to open that file right now.  Windows  OSX     Open the commmand line.   Windows  - Hit \"Start\" and then type \"Command Prompt\" and use that terminal.  OSX  - Type  Cmd+Space  and then enter  Terminal  in the search box to open the terminal.     Run the following commands, which will install the package and put you in the tutorial environment.   conda env create -f <PATH_TO_ENVIRONMENT.YML>  - You'll need to replace  <PATH_TO_ENVIRONMENT.YML>  with the actual path where the file was downloaded. For OSX, that's often ( /Users/<USERNAME>/Downloads/environment.yml ). For Windows, it is usually  C:/Users/<USERNAME>/Downloads/environment.yml . You'll have to replace  <USERNAME>  with your username on your machine.       That will download all of the packages that we'll be using. When it finishes, you can activate the environment with the following command:  Windows  -  activate tutorial  OSX  -  source activate tutorial",
+            "title": "2. Download and install the packages that we will use"
+        },
+        {
+            "location": "/#3-run-jupyter-notebook",
+            "text": "In your command prompt  with the tutorial environment activated  Type the following command  jupyter notebook .  A browser window will open, showing the Jupyer environment. By default, you will be in a file browser view.  In the file browser, find where you downloaded the course materials (if you have them yet).  Click on one of the notebook (*.ipynb) files to get started!",
+            "title": "3. Run Jupyter notebook!"
+        },
+        {
+            "location": "/#4-to-stop-jupyter-notebook",
+            "text": "Hit  Ctrl+c  to stop the Jupyter notebook server running on your machine. (Make sure to use  Ctrl+s  in the notebook to save it first!)",
+            "title": "4. To stop Jupyter notebook:"
+        },
+        {
+            "location": "/#5-to-leave-the-tutorial-environment-with-all-our-fun-packages-and-go-back-to-your-normal-environment",
+            "text": "Windows  -  deactivate tutorial  OSX  -  source deactivate tutorial",
+            "title": "5. To leave the tutorial environment (with all our fun packages) and go back to your normal environment:"
+        }
+    ]
+}

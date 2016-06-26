@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Instructions for installing Python via Anaconda and creating a new environment with the latest packages.">   
+    <link rel="shortcut icon" href="./favicon.ico">
+
+    <title>Installing Python for Data Science</title>
+
+    <link href="./css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.018/css/hack.min.css">
+    <link href='//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="./css/base.css" rel="stylesheet">
+    <link href="./css/cinder.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/highlight.css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+    <script>
+    WebFont.load({
+        google: {
+            families: ['Open Sans', 'PT Sans']
+        }
+    });
+    </script>
+
+    
+    <script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-54096005-6', 'auto');
+    ga('send', 'pageview');
+    </script>
+    
+</head>
+
+<body class="homepage" >
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href=".">Installing Python for Data Science</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                
+                
+                    <li>
+                        <a href="https://github.com/drivendata/pydata-setup">
+                            
+                                <i class="fa fa-github"></i>
+                            
+                            GitHub
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="first-level active"><a href="#setting-up-your-machine-for-data-science-in-python">Setting up your machine for data science in Python</a></li>
+        
+            <li class="second-level"><a href="#1-install-anaconda">1. Install Anaconda</a></li>
+            
+        
+            <li class="second-level"><a href="#2-download-and-install-the-packages-that-we-will-use">2. Download and install the packages that we will use</a></li>
+            
+        
+            <li class="second-level"><a href="#3-run-jupyter-notebook">3. Run Jupyter notebook!</a></li>
+            
+        
+            <li class="second-level"><a href="#4-to-stop-jupyter-notebook">4. To stop Jupyter notebook:</a></li>
+            
+        
+            <li class="second-level"><a href="#5-to-leave-the-tutorial-environment-with-all-our-fun-packages-and-go-back-to-your-normal-environment">5. To leave the tutorial environment (with all our fun packages) and go back to your normal environment:</a></li>
+            
+        
+    
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1 id="setting-up-your-machine-for-data-science-in-python">Setting up your machine for data science in Python</h1>
+<blockquote>
+<p>So you're into snakecharming and crystal balls? Consider this the magic supply shop...</p>
+</blockquote>
+<p><strong>Time required</strong>: <em>[~20 - 30 minutes]</em></p>
+<p>This is a community-maintained set of instructions for installing the Python Data Science stack. If you'll be using the programming language Python and its related libraries for loading data, exploring what it contains, visualizing that data, and creating statistical models this is what you need. Here's how to get your machine setup properly.</p>
+<h2 id="1-install-anaconda">1. Install Anaconda</h2>
+<p>Anaconda puts nearly all of the tools that we're going to need into a neat little package: the Python core language, an improved REPL environment called <code>Jupyter</code>, numeric computing libraries (<code>NumPy</code>, <code>pandas</code>), plotting libraries (<code>seaborn</code>, <code>matplotlib</code>), and statistics and machine learning libraries (<code>SciPy</code>, <code>scikit-learn</code>, <code>statsmodels</code>). We'll use Anaconda's installer to handle setting up the environment that we'll work in.</p>
+<ul>
+<li>Anaconda installer packages:<ul>
+<li><a href="https://repo.continuum.io/miniconda/Miniconda2-latest-Windows-x86_64.exe">Windows</a></li>
+<li><a href="https://repo.continuum.io/miniconda/Miniconda2-latest-MacOSX-x86_64.sh">Mac OSX</a></li>
+</ul>
+</li>
+<li>Once this downloads, you can follow the instructions for installing on your operating system: <a href="http://conda.pydata.org/docs/install/quick.html">at this link</a>.</li>
+<li><strong>Note:</strong> It's easiest just to use Anaconda's defaults in the installer. You don't have to change anything unless you're <em>sure</em> you want something different.</li>
+</ul>
+<h2 id="2-download-and-install-the-packages-that-we-will-use">2. Download and install the packages that we will use</h2>
+<ul>
+<li>Download this environment file: Remember where you save the file <code>environment.yml</code>. You'll need that path shortly. You don't need to open that file right now.<ul>
+<li><a href="https://github.com/drivendata/pydata-setup/raw/master/environment.windows.yml"><strong>Windows</strong></a></li>
+<li><a href="https://github.com/drivendata/pydata-setup/raw/master/environment.osx.yml"><strong>OSX</strong></a></li>
+</ul>
+</li>
+<li>
+<p>Open the commmand line.</p>
+<ul>
+<li><strong>Windows</strong> - Hit "Start" and then type "Command Prompt" and use that terminal.</li>
+<li><strong>OSX</strong> - Type <code>Cmd+Space</code> and then enter <code>Terminal</code> in the search box to open the terminal.</li>
+</ul>
+</li>
+<li>
+<p>Run the following commands, which will install the package and put you in the tutorial environment.</p>
+<ul>
+<li><code>conda env create -f &lt;PATH_TO_ENVIRONMENT.YML&gt;</code> - You'll need to replace <code>&lt;PATH_TO_ENVIRONMENT.YML&gt;</code> with the actual path where the file was downloaded. For OSX, that's often (<code>/Users/&lt;USERNAME&gt;/Downloads/environment.yml</code>). For Windows, it is usually <code>C:/Users/&lt;USERNAME&gt;/Downloads/environment.yml</code>. You'll have to replace <code>&lt;USERNAME&gt;</code> with your username on your machine.</li>
+</ul>
+</li>
+</ul>
+<p><script type="text/javascript" src="https://asciinema.org/a/7wnh8mi63hzs4cvddsu4vr745.js" id="asciicast-7wnh8mi63hzs4cvddsu4vr745" async></script></p>
+<ul>
+<li>That will download all of the packages that we'll be using. When it finishes, you can activate the environment with the following command:<ul>
+<li><strong>Windows</strong> - <code>activate tutorial</code></li>
+<li><strong>OSX</strong> - <code>source activate tutorial</code></li>
+</ul>
+</li>
+</ul>
+<script type="text/javascript" src="https://asciinema.org/a/1hq7x65wbuccelwe8ojik20in.js" id="asciicast-1hq7x65wbuccelwe8ojik20in" async></script>
+
+<h2 id="3-run-jupyter-notebook">3. Run Jupyter notebook!</h2>
+<ul>
+<li>In your command prompt <strong>with the tutorial environment activated</strong></li>
+<li>Type the following command <code>jupyter notebook .</code></li>
+<li>A browser window will open, showing the Jupyer environment. By default, you will be in a file browser view.</li>
+<li>In the file browser, find where you downloaded the course materials (if you have them yet).</li>
+<li>Click on one of the notebook (*.ipynb) files to get started!</li>
+</ul>
+<script type="text/javascript" src="https://asciinema.org/a/9owid7a4cbt35zu15elhns4ot.js" id="asciicast-9owid7a4cbt35zu15elhns4ot" async></script>
+
+<h2 id="4-to-stop-jupyter-notebook">4. To stop Jupyter notebook:</h2>
+<ul>
+<li>Hit <code>Ctrl+c</code> to stop the Jupyter notebook server running on your machine. (Make sure to use <code>Ctrl+s</code> in the notebook to save it first!)</li>
+</ul>
+<h2 id="5-to-leave-the-tutorial-environment-with-all-our-fun-packages-and-go-back-to-your-normal-environment">5. To leave the tutorial environment (with all our fun packages) and go back to your normal environment:</h2>
+<ul>
+<li><strong>Windows</strong> - <code>deactivate tutorial</code></li>
+<li><strong>OSX</strong> - <code>source deactivate tutorial</code></li>
+</ul></div>
+        
+    </div>
+
+    <footer class="col-md-12 text-center">
+        <hr>
+        <p>
+        <small>Project maintained by the friendly folks at <a target=_blanks href="https://www.drivendata.org">DrivenData</a>.<br></small>
+        
+        <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p></small>
+    </footer>
+
+    <script src="./js/jquery-1.10.2.min.js"></script>
+    <script src="./js/bootstrap-3.0.3.min.js"></script>
+    <script src="./js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script>
+    var base_url = '.';
+    </script>
+    <script data-main="./mkdocs/js/search.js" src="./mkdocs/js/require.js"></script>
+    <script src="./js/base.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                        <span class="sr-only">Close</span>
+                    </button>
+                    <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        From here you can search these documents. Enter your search terms below.
+                    </p>
+                    <form role="form">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                        </div>
+                    </form>
+                    <div id="mkdocs-search-results"></div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </body>
+
+</html>
+
+<!--
+MkDocs version : 0.15.3
+Build Date UTC : 2016-06-26 15:38:07
+-->
