@@ -1,2 +1,2 @@
-git+git://github.com/waylan/mkdocs@973#egg=mkdocs
+git+git://github.com/mkdocs/mkdocs#egg=mkdocs
 mkdocs-cinder
