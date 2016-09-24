@@ -7,3 +7,4 @@ google_analytics: ['UA-54096005-6', 'auto']
 theme: cinder
 pages:
   - Home: index.md
+  - TL,DR: tldr.md

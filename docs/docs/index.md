@@ -10,17 +10,19 @@ This is a community-maintained set of instructions for installing the Python Dat
 
 Anaconda puts nearly all of the tools that we're going to need into a neat little package: the Python core language, an improved REPL environment called `Jupyter`, numeric computing libraries (`NumPy`, `pandas`), plotting libraries (`seaborn`, `matplotlib`), and statistics and machine learning libraries (`SciPy`, `scikit-learn`, `statsmodels`). We'll use Anaconda's installer to handle setting up the environment that we'll work in.
 
- * Anaconda installer packages:
+In order to keep the size of the download small, we actually use a minimum set of packages called **Miniconda**.
+
+ * Miniconda installer packages:
     * [Windows](https://repo.continuum.io/miniconda/Miniconda2-latest-Windows-x86_64.exe)
     * [Mac OSX](https://repo.continuum.io/miniconda/Miniconda2-latest-MacOSX-x86_64.sh)
  * Once this downloads, you can follow the instructions for installing on your operating system: [at this link](http://conda.pydata.org/docs/install/quick.html).
  * **Note:** It's easiest just to use Anaconda's defaults in the installer. You don't have to change anything unless you're _sure_ you want something different.
 
-## 2. Download and install the packages that we will use
- * Download this environment file: Remember where you save the file `environment.yml`. You'll need that path shortly. You don't need to open that file right now.
+## 2. Download and install common packages for data science in Python
+ * Click the link below to download an environment file. This file contains a list of common packages and libraries for doing data science in Python. Remember where you save the file `environment.yml`. You'll need that path shortly. You don't need to open that file right now.
      * [**Windows**](https://github.com/drivendata/pydata-setup/raw/master/environment.windows.yml)
      * [**OSX**](https://github.com/drivendata/pydata-setup/raw/master/environment.osx.yml)
- * Open the commmand line.
+ * Once the download finishes, open the command line by doing the following:
      * **Windows** - Hit "Start" and then type "Command Prompt" and use that terminal.
      * **OSX** - Type `Cmd+Space` and then enter `Terminal` in the search box to open the terminal.
 
@@ -29,17 +31,18 @@ Anaconda puts nearly all of the tools that we're going to need into a neat littl
 
  <script type="text/javascript" src="https://asciinema.org/a/7wnh8mi63hzs4cvddsu4vr745.js" id="asciicast-7wnh8mi63hzs4cvddsu4vr745" async></script>
 
-* That will download all of the packages that we'll be using. When it finishes, you can activate the environment with the following command:
+* That will download all a set of packages that are commonly used for data science in Python. When it finishes, you can activate the environment with the following command:
     * **Windows** - `activate tutorial`
     * **OSX** - `source activate tutorial`
 
 <script type="text/javascript" src="https://asciinema.org/a/1hq7x65wbuccelwe8ojik20in.js" id="asciicast-1hq7x65wbuccelwe8ojik20in" async></script>
 
 ## 3. Run Jupyter notebook!
- * In your command prompt **with the tutorial environment activated**
+In this step, we'll make sure everything is working by running the Jupyter Notebook. [Jupyter Notebook](http://jupyter.org/) is a tool for doing interactive data science work in your browser.
+ * In your command prompt **with the tutorial environment activated** (Note: you'll be able to tell because your command prompt will say `(tutorial)` at the start of it.)
  * Type the following command `jupyter notebook .`
  * A browser window will open, showing the Jupyer environment. By default, you will be in a file browser view.
- * In the file browser, find where you downloaded the course materials (if you have them yet).
+ * In the file browser, find where you have a Jupyter notebook. If you don't have materials for a course or tutorial that you have downloaded, you can [download this fun Jupyter notebook](http://norvig.com/ipython/How%20to%20Do%20Things%20with%20Words.ipynb) and then open it in the file browser.
  * Click on one of the notebook (*.ipynb) files to get started!
 
 <script type="text/javascript" src="https://asciinema.org/a/9owid7a4cbt35zu15elhns4ot.js" id="asciicast-9owid7a4cbt35zu15elhns4ot" async></script>
@@ -50,4 +53,3 @@ Anaconda puts nearly all of the tools that we're going to need into a neat littl
 ## 5. To leave the tutorial environment (with all our fun packages) and go back to your normal environment:
  * **Windows** - `deactivate tutorial`
  * **OSX** - `source deactivate tutorial`
-
